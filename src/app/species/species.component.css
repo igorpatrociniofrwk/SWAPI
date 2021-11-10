@@ -1,0 +1,10 @@
+table {
+    margin: 15px;
+}
+.login {
+    position: absolute;
+    right: 10px;
+    display:flex;
+    border: 3px solid rgb(255, 0, 0);
+    top: 4px;
+}

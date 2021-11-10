@@ -1,0 +1,6 @@
+.bodyHome {
+    margin: 15px;
+    display:flex; 
+    flex-direction: row; 
+    justify-content: center;
+}

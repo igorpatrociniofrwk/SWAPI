@@ -1,0 +1,99 @@
+<nav  class="navbar navbar-expand-lg navbar-dark" style="background-color: #5f3473;">
+  <a class="navbar-brand" href="https://frwk.com.br/" style="font-weight: 600;">Framework</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200/films">Filmes <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link">Personagens <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200/planets">Planetas <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200/species">Especies <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200/starships">Naves <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200/vehicles">Veiculos <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="login">
+        <a class="nav-link" href="http://localhost:4200/login" style="color:white">Login <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<body>
+
+<table class="table table-striped">
+  <h1>Personagens</h1>
+</table>
+<table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Altura</th>
+      <th scope="col">Peso</th>
+      <th scope="col">Cor do Cabelo</th>
+      <th scope="col">Cor dos Olhos</th>
+      <th scope="col">Cor da pele</th>
+      <th scope="col">Ano de nascimento</th>
+      <th scope="col">Genero</th>
+      <th scope="col">Criado em:</th>
+      <th scope="col">Editado em </th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let people of peoples">
+        <th scope="row">{{ people.name }}</th>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ people.height }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ people.mass }}
+        </td>
+        <td>
+          <img class="mr-2"  style="text-align: left;">
+          {{ people.hair_color }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ people.skin_color }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ people.eye_color }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ people.birth_year }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ people.gender }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ people.created }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ people.edited }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>

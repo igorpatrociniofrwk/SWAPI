@@ -1,0 +1,104 @@
+<nav  class="navbar navbar-expand-lg navbar-dark" style="background-color: #5f3473;">
+  <a class="navbar-brand" href="https://frwk.com.br/" style="font-weight: 600;">Framework</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200/films">Filmes <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200/peoples">Personagens <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200/planets">Planetas <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link">Especies <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200/starships">Naves <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200/vehicles">Veiculos <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="login">
+        <a class="nav-link" href="http://localhost:4200/login" style="color:white">Login <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<body>
+
+<table class="table table-striped">
+  <h1>Especies</h1>
+</table>
+<table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Classificaacao</th>
+      <th scope="col">Designacao</th>
+      <th scope="col">Altura media</th>
+      <th scope="col">Cor de pele</th>
+      <th scope="col">Cor de cabelo</th>
+      <th scope="col">Cor dos olhos</th>
+      <th scope="col">Tempo medio de vida</th>
+      <th scope="col">Lingua</th>
+      <th scope="col">Criado em</th>
+      <th scope="col">Editado em</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let specie of species">
+        <th scope="row">{{ specie.name }}</th>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ specie.classification }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ specie.designation }}
+        </td>
+        <td>
+          <img class="mr-2"  style="text-align: left;">
+          {{ specie.average_height }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ specie.skin_colors }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ specie.hair_colors }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ specie.eye_colors }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ specie.average_lifespan }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ specie.language }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ specie.created }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ specie.edited }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>

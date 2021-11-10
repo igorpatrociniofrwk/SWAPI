@@ -1,0 +1,114 @@
+<nav  class="navbar navbar-expand-lg navbar-dark" style="background-color: #5f3473;">
+  <a class="navbar-brand" href="https://frwk.com.br/" style="font-weight: 600;">Framework</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200/films">Filmes <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200/peoples">Personagens <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200/planets">Planetas <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200/species">Especies <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200/starships">Naves <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link">Veiculos <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="login">
+        <a class="nav-link" href="http://localhost:4200/login" style="color:white">Login <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<body>
+
+<table class="table table-striped">
+  <h1>Veiculos</h1>
+</table>
+<table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Modelo</th>
+      <th scope="col">Montadora</th>
+      <th scope="col">Preco</th>
+      <th scope="col">Largura</th>
+      <th scope="col">Velocidade maxima</th>
+      <th scope="col">Tripulacao</th>
+      <th scope="col">Passageiros</th>
+      <th scope="col">Capacidade de Carga</th>
+      <th scope="col">Consumiveis</th>
+      <th scope="col">Classe</th>
+      <th scope="col">Criado em</th>
+      <th scope="col">Editado em</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let vehicle of vehicles">
+        <th scope="row">{{ vehicle.name }}</th>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ vehicle.model }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ vehicle.manufacturer }}
+        </td>
+        <td>
+          <img class="mr-2"  style="text-align: left;">
+          {{ vehicle.cost_in_credits }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ vehicle.length }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ vehicle.max_atmosphering_speed }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ vehicle.crew }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ vehicle.passengers }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ vehicle.cargo_capacity }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ vehicle.consumables }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ vehicle.starship_class }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ vehicle.created }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ vehicle.edited }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>

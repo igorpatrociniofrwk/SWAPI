@@ -1,0 +1,104 @@
+<nav  class="navbar navbar-expand-lg navbar-dark" style="background-color: #5f3473;">
+  <a class="navbar-brand" href="https://frwk.com.br/" style="font-weight: 600;">Framework</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200/films">Filmes <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200/peoples">Personagens <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link">Planetas <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200/species">Especies <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200/starships">Naves <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:4200/vehicles">Veiculos <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="login">
+        <a class="nav-link" href="http://localhost:4200/login" style="color:white">Login <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<body>
+
+<table class="table table-striped">
+  <h1>Planetas</h1>
+</table>
+<table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Periodo de rotacao</th>
+      <th scope="col">Periodo de orbita</th>
+      <th scope="col">Diametro</th>
+      <th scope="col">Clima</th>
+      <th scope="col">Gravidade</th>
+      <th scope="col">Terreno</th>
+      <th scope="col">Superficie de agua</th>
+      <th scope="col">Populacao</th>
+      <th scope="col">Criado em</th>
+      <th scope="col">Editado em</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let planet of planets">
+        <th scope="row">{{ planet.name }}</th>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ planet.rotation_period }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ planet.orbital_period }}
+        </td>
+        <td>
+          <img class="mr-2"  style="text-align: left;">
+          {{ planet.diameter }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ planet.climate }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ planet.gravity }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ planet.terrain }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ planet.surface_water }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ planet.population }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ planet.created }}
+        </td>
+        <td>
+          <img class="mr-2" style="text-align: left;">
+          {{ planet.edited }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
