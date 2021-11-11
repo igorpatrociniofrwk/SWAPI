@@ -1,6 +1,5 @@
 import { ApiService } from './../services/apiService.component';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,14 +9,9 @@ import { Router } from '@angular/router';
 
 export class HomeComponent implements OnInit {
 
-  constructor(
-    private router: Router
-    ) { }
-    
-    ngOnInit() {
+  constructor() { }
+
+  ngOnInit() {
      
-    }
-    goToLogin() {
-      this.router.navigate(['/login']);
-  }
- }  
+  };
+}
