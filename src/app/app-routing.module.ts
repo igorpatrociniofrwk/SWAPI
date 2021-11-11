@@ -7,7 +7,7 @@ import { StarshipsComponent } from './starships/starships.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
 import { LoginComponent } from './login/login.component';
 import { Login2Component } from './login2/login2.component';
-import { NgModule } from '@angular/core';
+import { ModuleWithProviders, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
@@ -48,6 +48,8 @@ const routes: Routes = [
     component: Login2Component
   }
 ];
+
+export const routing: ModuleWithProviders<any> = RouterModule.forRoot(routes);
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
