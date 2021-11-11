@@ -17,7 +17,7 @@ import { StarshipsComponent } from './starships/starships.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
 import { LoginComponent } from './login/login.component';;
 import { Login2Component } from './login2/login2.component';
-import { routing } from './app-routing.module';
+import { RouterModule, Routes } from '@angular/router';
 ;
 @NgModule({
   declarations: [
@@ -37,7 +37,7 @@ import { routing } from './app-routing.module';
     BrowserAnimationsModule,
     NgbModule,
     HttpClientModule,
-    routing
+    RouterModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]

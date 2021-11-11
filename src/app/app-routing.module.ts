@@ -8,7 +8,7 @@ import { VehiclesComponent } from './vehicles/vehicles.component';
 import { LoginComponent } from './login/login.component';
 import { Login2Component } from './login2/login2.component';
 import { ModuleWithProviders, NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, Route } from '@angular/router';
 
 const routes: Routes = [
   {
@@ -49,10 +49,12 @@ const routes: Routes = [
   }
 ];
 
-export const routing: ModuleWithProviders<any> = RouterModule.forRoot(routes);
-
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(
+      routes,
+      { enableTracing: true }
+    )
+  ],
 })
-export class AppRoutingModule { }
+export class AppModule { }
