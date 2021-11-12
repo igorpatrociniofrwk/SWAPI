@@ -91,11 +91,11 @@
         </td>
         <td>
           <img class="mr-2" style="text-align: left;">
-          {{ planet.created }}
+          {{ planet.created | date : 'dd/MM/yyyy' }}
         </td>
         <td>
           <img class="mr-2" style="text-align: left;">
-          {{ planet.edited }}
+          {{ planet.edited | date : 'dd/MM/yyyy' }}
         </td>
       </tr>
     </tbody>

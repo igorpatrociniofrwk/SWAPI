@@ -91,11 +91,11 @@
         </td>
         <td>
           <img class="mr-2" style="text-align: left;">
-          {{ specie.created }}
+          {{ specie.created | date : 'dd/MM/yyyy' }}
         </td>
         <td>
           <img class="mr-2" style="text-align: left;">
-          {{ specie.edited }}
+          {{ specie.edited | date : 'dd/MM/yyyy' }}
         </td>
       </tr>
     </tbody>

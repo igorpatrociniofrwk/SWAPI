@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { routes } from './app-routing.module';
+import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -36,7 +37,8 @@ import { Login2Component } from './login2/login2.component';
     BrowserAnimationsModule,
     NgbModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    CommonModule 
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]

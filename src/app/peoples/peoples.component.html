@@ -86,11 +86,11 @@
         </td>
         <td>
           <img class="mr-2" style="text-align: left;">
-          {{ people.created }}
+          {{ people.created | date : 'dd/MM/yyyy' }}
         </td>
         <td>
           <img class="mr-2" style="text-align: left;">
-          {{ people.edited }}
+          {{ people.edited | date : 'dd/MM/yyyy' }}
         </td>
       </tr>
     </tbody>

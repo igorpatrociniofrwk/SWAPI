@@ -111,11 +111,11 @@
         </td>
         <td>
           <img class="mr-2" style="text-align: left;">
-          {{ starship.created }}
+          {{ starship.created | date : 'dd/MM/yyyy' }}
         </td>
         <td>
           <img class="mr-2" style="text-align: left;">
-          {{ starship.edited }}
+          {{ starship.edited | date : 'dd/MM/yyyy' }}
         </td>
       </tr>
     </tbody>

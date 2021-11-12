@@ -97,15 +97,15 @@
         </td>
         <td>
           <img class="mr-2" style="text-align: left;">
-          {{ vehicle.starship_class }}
+          {{ vehicle.vehicle_class }}
         </td>
         <td>
           <img class="mr-2" style="text-align: left;">
-          {{ vehicle.created }}
+          {{ vehicle.created | date : 'dd/MM/yyyy' }}
         </td>
         <td>
           <img class="mr-2" style="text-align: left;">
-          {{ vehicle.edited }}
+          {{ vehicle.edited | date : 'dd/MM/yyyy' }}
         </td>
       </tr>
     </tbody>
