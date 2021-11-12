@@ -18,7 +18,6 @@ export class StarshipsComponent implements OnInit {
   ngOnInit() {
      this.apiService.buscarStarships().subscribe((res: any) => {
        this.starships = res.results;
-       console.log(this.starships)
      });
 };
 }

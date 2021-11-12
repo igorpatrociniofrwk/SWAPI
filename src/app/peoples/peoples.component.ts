@@ -18,7 +18,6 @@ export class PeoplesComponent implements OnInit {
   ngOnInit() {
      this.apiService.buscarPeoples().subscribe((res: any) => {
       this.peoples = res.results;
-      console.log(this.peoples)
     });
 };
 }

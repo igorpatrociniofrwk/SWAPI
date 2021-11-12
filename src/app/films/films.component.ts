@@ -19,7 +19,6 @@ export class FilmsComponent implements OnInit {
   ngOnInit() {
      this.apiService.buscarFilms().subscribe((res: any) => {
        this.films = res.results;
-       console.log(this.films)
      });
 };
 }

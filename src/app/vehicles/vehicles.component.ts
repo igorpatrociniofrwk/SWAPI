@@ -18,7 +18,6 @@ export class VehiclesComponent implements OnInit {
   ngOnInit() {
      this.apiService.buscarVehicles().subscribe((res: any) => {
        this.vehicles = res.results;
-       console.log(this.vehicles)
      });
 };
 }

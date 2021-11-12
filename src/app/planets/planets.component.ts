@@ -18,7 +18,6 @@ export class PlanetsComponent implements OnInit {
   ngOnInit() {
      this.apiService.buscarPlanets().subscribe((res: any) => {
        this.planets = res.results;
-       console.log(this.planets)
      });
 };
 }

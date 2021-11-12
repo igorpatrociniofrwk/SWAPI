@@ -18,7 +18,6 @@ export class SpeciesComponent implements OnInit {
   ngOnInit() {
      this.apiService.buscarSpecies().subscribe((res: any) => {
        this.species = res.results;
-       console.log(this.species)
      });
 };
 }
