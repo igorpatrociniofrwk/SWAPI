@@ -17,7 +17,14 @@ import { SpeciesComponent } from './species/species.component';
 import { StarshipsComponent } from './starships/starships.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
 import { LoginComponent } from './login/login.component';
-import { Login2Component } from './login2/login2.component';
+import { EntrarComponent } from './entrar/entrar.component';
+import { HeaderComponent } from './components/template/header/header.component';
+
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { NavComponent } from './components/template/nav/nav.component';
+
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from  '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -30,7 +37,9 @@ import { Login2Component } from './login2/login2.component';
     StarshipsComponent,
     VehiclesComponent,
     LoginComponent,
-    Login2Component
+    EntrarComponent,
+    HeaderComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +47,10 @@ import { Login2Component } from './login2/login2.component';
     NgbModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
-    CommonModule 
+    CommonModule ,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]

@@ -6,7 +6,7 @@ import { SpeciesComponent } from './species/species.component';
 import { StarshipsComponent } from './starships/starships.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
 import { LoginComponent } from './login/login.component';
-import { Login2Component } from './login2/login2.component';
+import { EntrarComponent } from './entrar/entrar.component';
 
 import { Routes } from '@angular/router';
 
@@ -44,8 +44,8 @@ export const routes: Routes = [
     component: LoginComponent
   },
   {
-    path:'login2',
-    component: Login2Component
+    path:'entrar',
+    component: EntrarComponent
   }
 ];
 

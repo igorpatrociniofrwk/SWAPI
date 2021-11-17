@@ -2,12 +2,12 @@ import { ApiService } from '../services/apiService.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-login2',
-  templateUrl: './login2.component.html',
-  styleUrls: ['./login2.component.css'],
+  selector: 'app-entrar',
+  templateUrl: './entrar.component.html',
+  styleUrls: ['./entrar.component.css'],
 })
 
-export class Login2Component implements OnInit {
+export class EntrarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
