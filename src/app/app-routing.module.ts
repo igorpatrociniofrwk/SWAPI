@@ -12,7 +12,7 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: HomeComponent
   },
   {
@@ -40,7 +40,7 @@ export const routes: Routes = [
     component: VehiclesComponent
   },
   {
-    path:'login',
+    path:'',
     component: LoginComponent
   },
   {
