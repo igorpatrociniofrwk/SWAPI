@@ -18,7 +18,6 @@ import { StarshipsComponent } from './starships/starships.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
 import { LoginComponent } from './login/login.component';
 import { EntrarComponent } from './entrar/entrar.component';
-import { HeaderComponent } from './components/template/header/header.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NavComponent } from './components/template/nav/nav.component';
@@ -38,7 +37,6 @@ import { MatListModule } from  '@angular/material/list';
     VehiclesComponent,
     LoginComponent,
     EntrarComponent,
-    HeaderComponent,
     NavComponent
   ],
   imports: [
