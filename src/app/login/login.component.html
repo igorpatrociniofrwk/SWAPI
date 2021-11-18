@@ -1,21 +1,18 @@
 <body class="bodyHome">
-
   <div class="row">
     <div>
-        <h3>Login </h3> <br>
+        <h3 style="text-align: center;">Login </h3> <br>
+        <p style="text-align: center;">Entre para ter acesso ao programa</p>
     </div>
     <div class="input-field col s12 center">
-      <form action="https://igorpatrociniofrwk.github.io/swapi/entrar">
-        <label for="email">Email:</label>
-        <input type="email" id="username" name="email" required style="width: 210px;">
-        <label for="password">Senha:</label>
-        <input id="password" type="password" name="password" required style="width: 210px;">
+        <label for="usuario">Email:</label>
+        <input [(ngModel)]="usuario.nome" id="usuario" type="email" class="validate" required style="width: 210px;">
+        <label for="senha">Senha:</label>
+        <input [(ngModel)]="usuario.senha" id="senha" type="password" class="validate" required style="width: 210px;">
         <br><br>
-        <div class="bot">
-        <a [routerLink]="['']" class="waves-effect grey darken-1 btn">Voltar</a>
-        <input type="submit" value="Login">
-        </div>
-      </form>
+        <button type="submit" class="btn" name="action" (click)="fazerLogin()">
+          Login
+        </button>
      </div>  
   </div>
 </body>

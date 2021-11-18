@@ -20,8 +20,13 @@ table {
     height:100px;
 }
 
-.bot{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.btn{
+    height:50px; 
+    width:100px; 
+    margin: -10px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+    background-color: #5f3473;
+    color: white;
 }

@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { routes } from './app-routing.module';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -24,6 +25,7 @@ import { NavComponent } from './components/template/nav/nav.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from  '@angular/material/list';
+import { AuthService } from './login/auth.service';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,7 @@ import { MatListModule } from  '@angular/material/list';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     BrowserAnimationsModule,
     NgbModule,
     HttpClientModule,
@@ -50,7 +53,7 @@ import { MatListModule } from  '@angular/material/list';
     MatSidenavModule,
     MatListModule
   ],
-  providers: [ApiService],
+  providers: [ApiService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
