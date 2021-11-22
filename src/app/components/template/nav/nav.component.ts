@@ -9,7 +9,27 @@ export class NavComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
+    const btnMobile = document.getElementById('btn-mobile');
+
+    btnMobile.addEventListener('click', this.toggleMenu);
+    btnMobile.addEventListener('touchstart', this.toggleMenu); 
+}
+
+    toggleMenu(event) {
+    if (event.type === 'touchstart') event.preventDefault();
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+    const active = nav.classList.contains('active');
+    event.currentTarget.setAttribute(active);
+    if (active) {
+        event.currentTarget.setAttribute('Fechar Menu');
+    } else {
+        event.currentTarget.setAttribute('Abrir Menu');
+    }
   }
 
+  onClickFecharMenu() {
+    this.toggleMenu(event)
+  }
 }

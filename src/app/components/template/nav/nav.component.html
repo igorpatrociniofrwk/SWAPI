@@ -1,58 +1,20 @@
-<mat-sidenav-container class="container">
-    <mat-sidenav class="sidenav" mode="side" opened
-        fixedInViewport="true" fixedTopGap="0">
-        <mat-nav-list class="nav-list">
-            <a mat-list-item href="https://frwk.com.br/" style="font-weight: 600;">
-                Framework
-            </a>
-            <a [routerLink]="['/home']" mat-list-item>
-                <i class="material-icons">
-                    home
-                </i>
-                Início
-            </a>
-            <a [routerLink]="['/films']" mat-list-item>
-                <i class="material-icons">
-                    movie_creation
-                </i>
-                Filmes
-            </a>
-            <a [routerLink]="['/peoples']" mat-list-item>
-                <i class="material-icons">
-                    person
-                </i>
-                Personagens
-            </a>
-            <a [routerLink]="['/planets']" mat-list-item>
-                <i class="material-icons">
-                    travel_explore
-                </i>
-                Planetas
-            </a>
-            <a [routerLink]="['/species']" mat-list-item>
-                <i class="material-icons">
-                    emoji_nature
-                </i>
-                Espécies
-            </a>
-            <a [routerLink]="['/starships']" mat-list-item>
-                <i class="material-icons">
-                    event_seat
-                </i>
-                Naves
-            </a>
-            <a [routerLink]="['/vehicles']" mat-list-item>
-                <i class="material-icons">
-                    commute
-                </i>
-                Veículos
-            </a>
-            <a [routerLink]="['']" mat-list-item class="login">
-                <i class="material-icons">
-                    login
-                </i>
-                Login
-            </a>
-        </mat-nav-list>
-    </mat-sidenav>
-</mat-sidenav-container>
+<div>
+    <header id="header">
+        <a mat-list-item href="https://frwk.com.br/" style="font-weight: 1000; font-size: 18px;">Framework</a>
+        <nav id="nav">
+          <button aria-label="Abrir Menu" id="btn-mobile">Menu
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu" role="menu">
+            <li><a [routerLink]="['/home']" (click)="onClickFecharMenu()">Home</a></li>
+            <li><a [routerLink]="['/films']" (click)="onClickFecharMenu()">Filmes</a></li>
+            <li><a [routerLink]="['/peoples']" (click)="onClickFecharMenu()">Personagens</a></li>
+            <li><a [routerLink]="['/planets']" (click)="onClickFecharMenu()">Planetas</a></li>
+            <li><a [routerLink]="['/species']" (click)="onClickFecharMenu()">Espécies</a></li>
+            <li><a [routerLink]="['/starships']" (click)="onClickFecharMenu()">Naves</a></li>
+            <li><a [routerLink]="['/vehicles']" (click)="onClickFecharMenu()">Veículos</a></li>
+            <li><a [routerLink]="['']" (click)="onClickFecharMenu()" class="login">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+</div>
