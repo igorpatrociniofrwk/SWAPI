@@ -2,3 +2,9 @@
     margin-left: 2%;
     margin-top: 2%;
     }
+
+.tbody {
+    max-width: 100%;
+    overflow: scroll;
+    height: auto;
+}

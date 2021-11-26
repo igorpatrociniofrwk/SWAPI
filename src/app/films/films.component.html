@@ -1,8 +1,9 @@
-<body>
+<div  class="tbody">
 
 <table class="table table-striped">
   <h1>Filmes</h1>
 </table>
+
 <table class="table table-striped">
     <thead>
     <tr>
@@ -20,35 +21,41 @@
       <tr *ngFor="let film of films">
         <th scope="row">{{ film.title }}</th>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ film.episode_id }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div class="thd">
           {{ film.opening_crawl }}
+          </div>
         </td>
         <td>
-          <img class="mr-2"  style="text-align: left;">
+          <div  style="text-align: left;">
           {{ film.director }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div style="text-align: left;">
           {{ film.producer }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div style="text-align: left;">
          <p>{{ film.release_date | date : 'dd/MM/yyyy' }}</p>
+         </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div style="text-align: left;">
           {{ film.created | date : 'dd/MM/yyyy' }} 
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div style="text-align: left;">
           {{ film.edited | date : 'dd/MM/yyyy' }}
+          </div>
         </td>
       </tr>
     </tbody>
   </table>
-
-</body>
+</div>

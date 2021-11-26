@@ -1,4 +1,4 @@
-<body>
+<div  class="tbody">
 
 <table class="table table-striped">
   <h1>Espécies</h1>
@@ -23,47 +23,56 @@
       <tr *ngFor="let specie of species">
         <th scope="row">{{ specie.name }}</th>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ specie.classification }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ specie.designation }}
+          </div>
         </td>
         <td>
-          <img class="mr-2"  style="text-align: left;">
+          <div>
           {{ specie.average_height }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ specie.skin_colors }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ specie.hair_colors }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ specie.eye_colors }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ specie.average_lifespan }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ specie.language }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ specie.created | date : 'dd/MM/yyyy' }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ specie.edited | date : 'dd/MM/yyyy' }}
+          </div>
         </td>
       </tr>
     </tbody>
   </table>
-
-</body>
+</div>

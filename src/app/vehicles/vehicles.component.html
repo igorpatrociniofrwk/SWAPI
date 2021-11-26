@@ -1,4 +1,4 @@
-<body>
+<div  class="tbody">
 
 <table class="table table-striped">
   <h1>Veículos</h1>
@@ -25,55 +25,66 @@
       <tr *ngFor="let vehicle of vehicles">
         <th scope="row">{{ vehicle.name }}</th>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ vehicle.model }}
+        </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ vehicle.manufacturer }}
+          </div>
         </td>
         <td>
-          <img class="mr-2"  style="text-align: left;">
+          <div>
           {{ vehicle.cost_in_credits }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ vehicle.length }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ vehicle.max_atmosphering_speed }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ vehicle.crew }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ vehicle.passengers }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ vehicle.cargo_capacity }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ vehicle.consumables }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ vehicle.vehicle_class }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ vehicle.created | date : 'dd/MM/yyyy' }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ vehicle.edited | date : 'dd/MM/yyyy' }}
+          </div>
         </td>
       </tr>
     </tbody>
   </table>
-
-</body>
+</div>

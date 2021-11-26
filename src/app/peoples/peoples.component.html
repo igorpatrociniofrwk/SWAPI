@@ -1,4 +1,4 @@
-<body>
+<div class="tbody">
     <table class="table table-striped">
       <h1>Personagens</h1>
     </table>
@@ -21,42 +21,51 @@
           <tr *ngFor="let people of peoples">
             <th scope="row">{{ people.name }}</th>
             <td>
-              <img class="mr-2" style="text-align: left;">
+              <div>
               {{ people.height }}
+              </div>
             </td>
             <td>
-              <img class="mr-2" style="text-align: left;">
+              <div>
               {{ people.mass }}
+              </div>
             </td>
             <td>
-              <img class="mr-2"  style="text-align: left;">
+              <div>
               {{ people.hair_color }}
+              </div>
             </td>
             <td>
-              <img class="mr-2" style="text-align: left;">
+              <div>
               {{ people.skin_color }}
+              </div>
             </td>
             <td>
-              <img class="mr-2" style="text-align: left;">
+              <div>
               {{ people.eye_color }}
+              </div>
             </td>
             <td>
-              <img class="mr-2" style="text-align: left;">
+              <div>
               {{ people.birth_year }}
+              </div>
             </td>
             <td>
-              <img class="mr-2" style="text-align: left;">
+              <div>
               {{ people.gender }}
+              </div>
             </td>
             <td>
-              <img class="mr-2" style="text-align: left;">
+              <div>
               {{ people.created | date : 'dd/MM/yyyy' }}
+              </div>
             </td>
             <td>
-              <img class="mr-2" style="text-align: left;">
+              <div>
               {{ people.edited | date : 'dd/MM/yyyy' }}
+              </div>
             </td>
           </tr>
         </tbody>
       </table>
-</body>
+    </div>

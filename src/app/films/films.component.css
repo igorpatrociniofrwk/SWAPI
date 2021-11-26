@@ -2,3 +2,20 @@
     margin-left: 2%;
     margin-top: 2%;
     }
+
+.tbody {
+    max-width: 100%;
+    overflow: scroll;
+    height: auto;
+}
+
+.thd {
+    text-align: left;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 600px){
+    .thd {
+        width: 20em;
+    }
+}

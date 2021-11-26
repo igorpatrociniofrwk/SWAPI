@@ -1,4 +1,4 @@
-<body>
+<div  class="tbody">
 
 <table class="table table-striped">
   <h1>Naves</h1>
@@ -27,63 +27,76 @@
       <tr *ngFor="let starship of starships">
         <th scope="row">{{ starship.name }}</th>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ starship.model }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ starship.manufacturer }}
+          </div>
         </td>
         <td>
-          <img class="mr-2"  style="text-align: left;">
+          <div>
           {{ starship.cost_in_credits }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ starship.length }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ starship.max_atmosphering_speed }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ starship.crew }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ starship.passengers }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ starship.cargo_capacity }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ starship.consumables }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ starship.hyperdrive_rating }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ starship.MGLT }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ starship.starship_class }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ starship.created | date : 'dd/MM/yyyy' }}
+          </div>
         </td>
         <td>
-          <img class="mr-2" style="text-align: left;">
+          <div>
           {{ starship.edited | date : 'dd/MM/yyyy' }}
+          </div>
         </td>
       </tr>
     </tbody>
   </table>
-
-</body>
+</div>
