@@ -3,6 +3,12 @@
     margin-top: 2%;
     }
 
+.title {
+    position: relative;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+    
 .tbody {
     max-width: 100%;
     overflow: scroll;

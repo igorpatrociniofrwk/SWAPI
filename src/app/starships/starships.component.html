@@ -1,102 +1,102 @@
-<div  class="tbody">
-
-<table class="table table-striped">
+<div class="title">
   <h1>Naves</h1>
-</table>
-<table class="table table-striped">
-    <thead>
-    <tr>
-      <th scope="col">Nome</th>
-      <th scope="col">Modelo</th>
-      <th scope="col">Montadora</th>
-      <th scope="col">Preço</th>
-      <th scope="col">Largura</th>
-      <th scope="col">Velocidade máxima</th>
-      <th scope="col">Tripulação</th>
-      <th scope="col">Passageiros</th>
-      <th scope="col">Capacidade de Carga</th>
-      <th scope="col">Consumíveis</th>
-      <th scope="col">Hiperdrive</th>
-      <th scope="col">MGLT</th>
-      <th scope="col">Classe</th>
-      <th scope="col">Criado em:</th>
-      <th scope="col">Editado em:</th>
-    </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let starship of starships">
-        <th scope="row">{{ starship.name }}</th>
-        <td>
-          <div>
-          {{ starship.model }}
-          </div>
-        </td>
-        <td>
-          <div>
-          {{ starship.manufacturer }}
-          </div>
-        </td>
-        <td>
-          <div>
-          {{ starship.cost_in_credits }}
-          </div>
-        </td>
-        <td>
-          <div>
-          {{ starship.length }}
-          </div>
-        </td>
-        <td>
-          <div>
-          {{ starship.max_atmosphering_speed }}
-          </div>
-        </td>
-        <td>
-          <div>
-          {{ starship.crew }}
-          </div>
-        </td>
-        <td>
-          <div>
-          {{ starship.passengers }}
-          </div>
-        </td>
-        <td>
-          <div>
-          {{ starship.cargo_capacity }}
-          </div>
-        </td>
-        <td>
-          <div>
-          {{ starship.consumables }}
-          </div>
-        </td>
-        <td>
-          <div>
-          {{ starship.hyperdrive_rating }}
-          </div>
-        </td>
-        <td>
-          <div>
-          {{ starship.MGLT }}
-          </div>
-        </td>
-        <td>
-          <div>
-          {{ starship.starship_class }}
-          </div>
-        </td>
-        <td>
-          <div>
-          {{ starship.created | date : 'dd/MM/yyyy' }}
-          </div>
-        </td>
-        <td>
-          <div>
-          {{ starship.edited | date : 'dd/MM/yyyy' }}
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+</div>
+
+<div  class="tbody">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+          <th scope="col">Nome</th>
+          <th scope="col">Modelo</th>
+          <th scope="col">Montadora</th>
+          <th scope="col">Preço</th>
+          <th scope="col">Largura</th>
+          <th scope="col">Velocidade máxima</th>
+          <th scope="col">Tripulação</th>
+          <th scope="col">Passageiros</th>
+          <th scope="col">Capacidade de Carga</th>
+          <th scope="col">Consumíveis</th>
+          <th scope="col">Hiperdrive</th>
+          <th scope="col">MGLT</th>
+          <th scope="col">Classe</th>
+          <th scope="col">Criado em:</th>
+          <th scope="col">Editado em:</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let starship of starships">
+            <th scope="row">{{ starship.name }}</th>
+            <td>
+              <div>
+              {{ starship.model }}
+              </div>
+            </td>
+            <td>
+              <div>
+              {{ starship.manufacturer }}
+              </div>
+            </td>
+            <td>
+              <div>
+              {{ starship.cost_in_credits }}
+              </div>
+            </td>
+            <td>
+              <div>
+              {{ starship.length }}
+              </div>
+            </td>
+            <td>
+              <div>
+              {{ starship.max_atmosphering_speed }}
+              </div>
+            </td>
+            <td>
+              <div>
+              {{ starship.crew }}
+              </div>
+            </td>
+            <td>
+              <div>
+              {{ starship.passengers }}
+              </div>
+            </td>
+            <td>
+              <div>
+              {{ starship.cargo_capacity }}
+              </div>
+            </td>
+            <td>
+              <div>
+              {{ starship.consumables }}
+              </div>
+            </td>
+            <td>
+              <div>
+              {{ starship.hyperdrive_rating }}
+              </div>
+            </td>
+            <td>
+              <div>
+              {{ starship.MGLT }}
+              </div>
+            </td>
+            <td>
+              <div>
+              {{ starship.starship_class }}
+              </div>
+            </td>
+            <td>
+              <div>
+              {{ starship.created | date : 'dd/MM/yyyy' }}
+              </div>
+            </td>
+            <td>
+              <div>
+              {{ starship.edited | date : 'dd/MM/yyyy' }}
+              </div>
+            </td>
+          </tr>
+        </tbody>
+    </table>
 </div>

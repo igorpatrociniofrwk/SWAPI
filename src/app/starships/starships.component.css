@@ -8,3 +8,9 @@
     overflow: scroll;
     height: auto;
 }
+
+.title {
+    position: relative;
+    margin-left: 2%;
+    margin-top: 2%;
+}
