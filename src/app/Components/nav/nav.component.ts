@@ -29,7 +29,11 @@ export class NavComponent implements OnInit {
     }
   }
 
-  onClickFecharMenu() {
+  onClickFecharMenu(logOut?: boolean) 
+  {
+    if(!!logOut){
+      localStorage.removeItem('usuarioAutenticado');
+    }
     this.toggleMenu(event)
   }
 }

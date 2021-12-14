@@ -15,7 +15,9 @@ export class LoginComponent implements OnInit {
   constructor(private authService: AuthService) { }
 
   ngOnInit() {
-     
+    if (!!localStorage.getItem('usuarioAutenticado')) {
+      localStorage.removeItem('usuarioAutenticado');
+    }
   }
 
   fazerLogin(){

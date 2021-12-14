@@ -1,5 +1,6 @@
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
-import { AuthService } from './login/auth.service';
+import { AuthService } from './components/login/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,7 @@ export class AppComponent {
 
   mostrarMenu: boolean = false;
 
-  constructor(private authService: AuthService) {
+  constructor(private authService: AuthService, public router: Router) {
 
   }
 
@@ -19,5 +20,11 @@ export class AppComponent {
     this.authService.mostrarMenuEmitter.subscribe(
       mostrar => this.mostrarMenu = mostrar
     );
+
+    console.log(this.router.url)
+
+    if (!!localStorage.getItem('usuarioAutenticado')) {
+      this.mostrarMenu = Boolean(localStorage.getItem('usuarioAutenticado'));
+    }
   }
 }
