@@ -1,5 +1,5 @@
+import { PlanetsService } from './../../services/planets.service';
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../../services/apiService.component';
 
 @Component({
   selector: 'app-planets',
@@ -10,13 +10,13 @@ export class PlanetsComponent implements OnInit {
 
   planets;
 
-  constructor(private apiService:ApiService) { }
+  constructor(private planetService:PlanetsService) { }
 
   
   
 
   ngOnInit() {
-     this.apiService.buscarPlanets().subscribe((res: any) => {
+     this.planetService.searchPlanets().subscribe((res: any) => {
        this.planets = res.results;
      });
 };

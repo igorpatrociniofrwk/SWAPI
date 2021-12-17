@@ -1,5 +1,5 @@
 import { AuthGuard } from './components/guards/auth.guard';
- import { HomeComponent } from './components/home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import { FilmsComponent } from './components/films/films.component';
 import { PeoplesComponent } from './components/peoples/peoples.component';
 import { PlanetsComponent } from './components/planets/planets.component';

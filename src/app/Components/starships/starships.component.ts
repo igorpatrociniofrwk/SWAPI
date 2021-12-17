@@ -1,5 +1,5 @@
+import { StarshipsService } from './../../services/starships.service';
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../../services/apiService.component';
 
 @Component({
   selector: 'app-starships',
@@ -10,13 +10,13 @@ export class StarshipsComponent implements OnInit {
 
   starships;
 
-  constructor(private apiService:ApiService) { }
+  constructor(private starshipService:StarshipsService) { }
 
   
   
 
   ngOnInit() {
-     this.apiService.buscarStarships().subscribe((res: any) => {
+     this.starshipService.searchStarships().subscribe((res: any) => {
        this.starships = res.results;
      });
 };

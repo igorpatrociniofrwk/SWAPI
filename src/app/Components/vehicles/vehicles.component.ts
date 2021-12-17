@@ -1,5 +1,5 @@
+import { VehiclesService } from './../../services/vehicles.service';
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../../services/apiService.component';
 
 @Component({
   selector: 'app-vehicles',
@@ -10,13 +10,13 @@ export class VehiclesComponent implements OnInit {
 
   vehicles;
 
-  constructor(private apiService:ApiService) { }
+  constructor(private vehicle:VehiclesService) { }
 
   
   
 
   ngOnInit() {
-     this.apiService.buscarVehicles().subscribe((res: any) => {
+     this.vehicle.searchVehicles().subscribe((res: any) => {
        this.vehicles = res.results;
      });
 };

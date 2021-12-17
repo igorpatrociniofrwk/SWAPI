@@ -1,5 +1,5 @@
+import { SpeciesService } from './../../services/species.service';
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../../services/apiService.component';
 
 @Component({
   selector: 'app-species',
@@ -10,13 +10,13 @@ export class SpeciesComponent implements OnInit {
 
   species;
 
-  constructor(private apiService:ApiService) { }
+  constructor(private specieService:SpeciesService) { }
 
   
   
 
   ngOnInit() {
-     this.apiService.buscarSpecies().subscribe((res: any) => {
+     this.specieService.searchSpecies().subscribe((res: any) => {
        this.species = res.results;
      });
 };

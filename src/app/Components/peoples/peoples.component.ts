@@ -1,5 +1,5 @@
+import { PeoplesService } from './../../services/peoples.service';
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../../services/apiService.component';
 
 @Component({
   selector: 'app-peoples',
@@ -10,13 +10,13 @@ export class PeoplesComponent implements OnInit {
 
   peoples;
 
-  constructor(private apiService:ApiService) { }
+  constructor(private peopleService:PeoplesService) { }
 
   
   
 
   ngOnInit() {
-     this.apiService.buscarPeoples().subscribe((res: any) => {
+     this.peopleService.searchPeoples().subscribe((res: any) => {
       this.peoples = res.results;
     });
 };
