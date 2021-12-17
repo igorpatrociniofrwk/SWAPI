@@ -1,6 +1,11 @@
 import { AuthGuard } from './components/guards/auth.guard';
 import { HttpClientModule } from '@angular/common/http';
-import { ApiService } from './services/apiService.component';
+import { FilmsService } from './services/films.service';
+import { PeoplesService } from './services/peoples.service';
+import { PlanetsService } from './services/planets.service';
+import { SpeciesService } from './services/species.service'; 
+import { StarshipsService } from './services/starships.service'; 
+import { VehiclesService } from './services/vehicles.service'; 
 import { NgModule, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
@@ -54,7 +59,15 @@ import { AuthService } from './components/login/auth.service';
     MatSidenavModule,
     MatListModule
   ],
-  providers: [ApiService, AuthService, AuthGuard],
+  providers: [
+    FilmsService, 
+    PeoplesService,
+    PlanetsService,
+    SpeciesService,
+    StarshipsService,
+    VehiclesService,
+    AuthService, 
+    AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
