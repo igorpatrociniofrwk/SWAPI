@@ -28,10 +28,13 @@ import { EntrarComponent } from './components/entrar/entrar.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NavComponent } from './components/nav/nav.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from  '@angular/material/list';
 import { AuthService } from './components/login/auth.service';
+import { PaginationComponent } from './components/shared/pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +48,8 @@ import { AuthService } from './components/login/auth.service';
     VehiclesComponent,
     LoginComponent,
     EntrarComponent,
-    NavComponent
+    NavComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +61,9 @@ import { AuthService } from './components/login/auth.service';
     CommonModule ,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [
     FilmsService, 
