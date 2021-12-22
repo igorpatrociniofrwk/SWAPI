@@ -13,10 +13,10 @@ export class PeoplesService{
     constructor(public http: HttpClient) {}
 
     searchPeoples() {
-        return this.http.get('${this.url}/people');
+        return this.http.get(`${this.url}/people`);
     }
 
-    searchPeoplesById() {
-        return this.http.get('${this.url}/people/${id}');
-    }
+    /* searchPeoplesById() {
+        return this.http.get(`${this.url}/people/${id}`);
+    } */
 }

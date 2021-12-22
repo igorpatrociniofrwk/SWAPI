@@ -13,10 +13,10 @@ export class PlanetsService{
     constructor(public http: HttpClient) {}
 
     searchPlanets() {
-        return this.http.get('${this.url}/planets');
+        return this.http.get(`${this.url}/planets`);
     }
 
-    searchPlanetsById() {
-        return this.http.get('${this.url}/planets/${id}');
-    }
+    /* searchPlanetsById() {
+        return this.http.get(`${this.url}/planets/${id}`);
+    } */
 }

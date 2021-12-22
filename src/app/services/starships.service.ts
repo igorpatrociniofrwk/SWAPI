@@ -13,10 +13,10 @@ export class StarshipsService{
     constructor(public http: HttpClient) {}
 
     searchStarships() {
-        return this.http.get('${this.url}/starships');
+        return this.http.get(`${this.url}/starships`);
     }
 
-    searchStarshipsById() {
-        return this.http.get('${this.url}/starships/${id}');
-    }
+    /* searchStarshipsById() {
+        return this.http.get(`${this.url}/starships/${id}`);
+    } */
 }

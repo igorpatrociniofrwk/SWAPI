@@ -13,10 +13,10 @@ export class FilmsService{
     constructor(public http: HttpClient) {}
 
     searchFilms() {
-        return this.http.get('${this.url}/films');
+        return this.http.get(`${this.url}/films`);
     }
 
-    searchFilmsById() {
-        return this.http.get('${this.url}/films/${id}');
-    }
+    /* searchFilmsById() {
+        return this.http.get(`${this.url}/films/${id}`);
+    } */
 }

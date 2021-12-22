@@ -13,10 +13,10 @@ export class SpeciesService{
     constructor(public http: HttpClient) {}
 
     searchSpecies() {
-        return this.http.get('${this.url}/species');
+        return this.http.get(`${this.url}/species`);
     }
 
-    searchSpeciesById() {
-        return this.http.get('${this.url}/species/${id}');
-    }
+    /* searchSpeciesById() {
+        return this.http.get(`${this.url}/species/${id}`);
+    } */
 }

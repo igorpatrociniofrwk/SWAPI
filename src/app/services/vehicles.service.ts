@@ -13,10 +13,10 @@ export class VehiclesService{
     constructor(public http: HttpClient) {}
 
     searchVehicles() {
-        return this.http.get('${this.url}/vehicles');
+        return this.http.get(`${this.url}/vehicles`);
     }
 
-    searchVehiclesById() {
-        return this.http.get('${this.url}/vehicles/${id}');
-    }
+    /* searchVehiclesById() {
+        return this.http.get(`${this.url}/vehicles/${id}`);
+    } */
 }
