@@ -16,7 +16,4 @@ export class FilmsService{
         return this.http.get(`${this.url}/films`);
     }
 
-    /* searchFilmsById() {
-        return this.http.get(`${this.url}/films/${id}`);
-    } */
 }

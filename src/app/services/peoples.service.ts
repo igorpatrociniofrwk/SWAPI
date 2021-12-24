@@ -9,6 +9,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class PeoplesService{
 
     url = "https://swapi.dev/api/"
+    page = "https://swapi.dev/api/people/"
 
     constructor(public http: HttpClient) {}
 
@@ -16,7 +17,8 @@ export class PeoplesService{
         return this.http.get(`${this.url}/people`);
     }
 
-    /* searchPeoplesById() {
-        return this.http.get(`${this.url}/people/${id}`);
+    /* pagePeoplees() {
+        return this.http.get(`${this.page}/?page=${dd}`);
     } */
+
 }

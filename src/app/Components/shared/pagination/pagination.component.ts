@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-pagination',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaginationComponent implements OnInit {
 
-  constructor() { }
+  @Input() next: string;
+  @Input() previous: string;
 
-  ngOnInit(): void {
+  constructor(private router: Router) { }
+
+  ngOnInit(): void { }
+
+  navigateTo(nextOrPrevious) {
+    console.log(nextOrPrevious)
+    this.router.navigateByUrl(nextOrPrevious)
   }
 
 }
